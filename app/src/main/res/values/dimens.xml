@@ -1,0 +1,15 @@
+<resources>
+        <dimen name="fab_margin">16dp</dimen>
+        <dimen name="MoviesTextSize">15sp</dimen>
+        <dimen name="MoviesTextSizeLandscape">20sp</dimen>
+        <dimen name="MoviesImageWidth">100dp</dimen>
+        <dimen name="MoviesImageHeight">150dp</dimen>
+        <dimen name="MovieImageWidthLandscape">150dp</dimen>
+        <dimen name="MoviesImageHeightLandscape">200dp</dimen>
+        <dimen name="MovieDetailsTextSize">20sp</dimen>
+        <dimen name="MovieDetailsTextSizeLandscape">25sp</dimen>
+        <dimen name="MovieDetailsImageWidth">150dp</dimen>
+        <dimen name="MovieDetailsImageHeight">200dp</dimen>
+        <dimen name="MovieDetailsImageWidthLandscape">200dp</dimen>
+        <dimen name="MovieDetailsImageHeightLandscape">200dp</dimen>
+</resources>

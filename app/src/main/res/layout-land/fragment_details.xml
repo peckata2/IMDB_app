@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailsFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <ImageView
+        android:id="@+id/MovieDetailsImage"
+        android:layout_width="@dimen/MovieDetailsImageWidthLandscape"
+        android:layout_height="@dimen/MoviesImageHeightLandscape"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MovieDetailsTitle"
+        android:id="@+id/MovieDetailsTitle"
+        app:layout_constraintStart_toEndOf="@id/MovieDetailsImage"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/MovieDetailsTextSizeLandscape"/>
+
+    <TextView
+        android:id="@+id/MovieDetailsDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MovieDetailsReleaseDate"
+        app:layout_constraintStart_toEndOf="@id/MovieDetailsImage"
+        app:layout_constraintTop_toBottomOf="@id/MovieDetailsTitle"
+        android:textSize="@dimen/MovieDetailsTextSizeLandscape"/>
+
+    <TextView
+        android:id="@+id/MovieDetailsRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MovieDetailsRating"
+        app:layout_constraintStart_toEndOf="@id/MovieDetailsImage"
+        app:layout_constraintTop_toBottomOf="@id/MovieDetailsDate"
+        android:textSize="@dimen/MovieDetailsTextSizeLandscape"/>
+    <TextView
+        android:id="@+id/MovieDetailsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESCRIPTION"
+        app:layout_constraintStart_toEndOf="@id/MovieDetailsImage"
+        app:layout_constraintTop_toBottomOf="@id/MovieDetailsRating"
+        android:textSize="@dimen/MovieDetailsTextSizeLandscape"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

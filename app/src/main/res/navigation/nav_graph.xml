@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/collectionDemoFragment">
+
+    <fragment
+        android:id="@+id/tabFragment"
+        android:name="com.example.imdb_app.TabFragment"
+        android:label="tab_fragment"
+        tools:layout="@layout/tab_fragment" >
+        <action
+            android:id="@+id/action_tabFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.imdb_app.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_tabFragment"
+            app:destination="@id/tabFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectionDemoFragment"
+        android:name="com.example.imdb_app.HomeFragment"
+        android:label="fragment_collection_demo"
+        tools:layout="@layout/fragment_collection_demo" >
+        <action
+            android:id="@+id/action_collectionDemoFragment_to_tabFragment"
+            app:destination="@id/tabFragment" />
+    </fragment>
+</navigation>
